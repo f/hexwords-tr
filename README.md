@@ -2,6 +2,8 @@
 
 > Based on the idea on https://hexwords.netlify.app
 
+**Notice:** Words are from https://sozluk.gov.tr.
+
 ## Words
 
 | Word | HEX | Can be a color? |
