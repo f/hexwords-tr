@@ -4,6 +4,10 @@
 
 **Notice:** Words are from https://sozluk.gov.tr.
 
+## JSON Data
+
+Feel free to use [this file](https://gist.githubusercontent.com/f/9c59c515fca028b549a6014aa43c14b0/raw/8253074695e0777b97b6be5e96b6c51f645337ae/all-hex-words.json) if you need these as a JSON list.
+
 ## Words
 
 | Word | HEX | Can be a color? |
