@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="header-wrapper">
+        <h1>#HEXWORDS</h1>
+        <h2>Why bother with a random green when you can choose to be a #BADA55!</h2>
+        <h2> <a href="https://hexwords.netlify.app">Reference</a></h2>
+    </div>
+    
+
+    <div class="input-wrapper">
+        <div class="search-wrapper flex-row">
+            <input type="text" name="search" id="search-text" placeholder="search..." onkeyup="getSearchText()"></input>
+            <input type="checkbox" name="set-alpha" id="set-alpha">
+            <label for="set-alpha">Alpha</label>
+        </div>
+    
+        <div class="proximity-wrapper flex-row">
+            <input type="text" name="search" id="search-proximity" placeholder="order by proximity to..." disabled></input>
+            <input type="color" name="set-proximity" id="set-proximity" oninput="getSearchProximity()">
+        </div>
+    </div>
+
+    <!--Gonna display when copying-->
+    <div id="callout">
+        
+    </div>
+    
+
+
+    <div class="cards-wrapper">
+        <!--GONNA FILL-->
+    </div>
+</body>
+<script src="parser.js"></script>
+

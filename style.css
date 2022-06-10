@@ -1,0 +1,131 @@
+body{
+    font-family: monospace;
+}
+.header-wrapper{
+    text-align: center;
+    padding: 0 20px;
+}
+
+.header-wrapper > h1{
+    font-size: 2em;
+}
+
+.header-wrapper > h2{
+    font-size: 1.5em;
+}
+
+.header-wrapper > h3{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.header-wrapper > h3 > a{
+    color: black;
+}
+
+.input-wrapper{
+    position: sticky;
+    top: 0;
+    background-color:  #ffffff;
+    padding-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    grid-template-columns: max-content max-content max-content;
+    z-index: 10;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    width: min(30rem, 50vw);
+}
+
+input[type="text"]{
+    border: none;
+    outline: none;
+    width: 100%;
+    border:solid 1px #ccc;
+    border-radius: 10rem;
+    padding: 0.3rem 0.7rem;
+}
+
+input[type="color"]{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.cards-wrapper{
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cards-wrapper > .color-card{
+    font-size: 1rem;
+    min-width: 15rem;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    border: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem ;
+}
+
+.cards-wrapper > .color-card > small{
+    font-size: 0.6rem;
+}
+
+.cards-wrapper > .color-card > .copy-icon{
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    width: fit-content;
+    padding: 0;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+#callout{
+    display: none;
+    transition: 2s ease-in;
+    flex-direction: row;
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    margin-left: 20px;
+    max-width: 300px;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: #90ee90;
+    z-index: 150;
+    border-radius: 0.3rem;
+    align-items: center;
+    animation: rightToLeft 0.5s;
+}
+@keyframes rightToLeft {
+    0% {
+      right: -300px ;
+    }
+    100% {
+      right: 20px;    
+    }
+}
+
+@keyframes leftToRight {
+    0% {
+      right: 20px ;
+    }
+    100% {
+      right: -300px;    
+    }
+}
